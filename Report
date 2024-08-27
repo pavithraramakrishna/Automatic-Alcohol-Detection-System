@@ -1,0 +1,289 @@
+
+ JSS MAHAVIDYAPEETHA
+ JSS SCIENCE AND TECHNOLOGY UNIVERSITY
+ JSS Technical Institutions’ Campus, Mysuru – 570006
+
+COURSE: INTERNET OF THINGS
+ SUBJECT CODE: 20CS630
+TOPIC: AUTOMATIC ALCOHOL DETECTION SYSTEM
+
+ SUBMITTED TO,
+Prof. Shwethashree G C Assistant professor, Department of
+Computer Science and Engineering
+JSSTU, MYSORE
+
+SUBMITTED BY,
+USN NO. NAME
+01JST21CS070 PAVITHRA R
+01JCE21CS024 CHAITRA ISHWAR HIREMATH
+01JCE21CS030 DEEPA S R
+
+
+
+Contents:
+1. Abstract….……………………………………………
+2. Introduction……………………………………………
+3. Literature review………………………………………
+4. Proposed Method..………………………………………
+5. Implementation……………………………………
+6. Test Case and Resul……………………………………
+7. Conclusion………………………………………………
+8. References………………………………………………
+
+
+
+Abstract:
+
+ The "Automatic Alcohol Detection System" project is designed to enhance vehicular safety
+by preventing accidents related to alcohol consumption. The system uses sensor technology to
+detect the presence of alcohol in the breath of a driver. Upon entering the vehicle, the driver is
+required to breathe into an alcohol sensor, typically an ethanol gas sensor. If the sensor detects
+alcohol levels above a predefined threshold, indicative of intoxication, the system automatically
+prevents the vehicle's engine from starting.
+ The primary components of this system include an alcohol sensor, a microcontroller for
+processing sensor data, and a relay module to control the ignition system. The sensor's output
+is sent to the microcontroller, which is programmed to analyze whether the detected alcohol
+concentration exceeds legal limits. If the concentration is too high, the microcontroller activates
+the relay, which cuts the ignition circuit, thereby immobilizing the vehicle.
+ Additionally, the system can be integrated with other safety measures such as recording the
+event in the vehicle's log, alerting local authorities, or sending notifications to predefined
+contacts. This project not only aims to reduce the number of alcohol-related traffic incidents
+but also serves as a deterrent against drunk driving, ultimately promoting road safety and
+responsible behavior.
+ By implementing such a system, we can expect a decrease in accidents and fatalities
+associated with drunk driving, making roads safer for everyone. The system can be further
+refined with enhancements like real-time wireless communication, advanced analytics for
+detection accuracy, and user-friendly interfaces for broader adoption.
+
+
+
+Introduction:
+
+ The "Automatic Alcohol Detection System" represents a significant advancement in
+automotive safety technology with the primary goal of reducing alcohol-related vehicular
+accidents. Alcohol impairment is a major factor in traffic incidents worldwide, contributing
+significantly to both fatalities and serious injuries. Despite stringent laws and awareness
+campaigns, drunk driving remains a persistent issue, necessitating the development of
+automated systems to combat this risk directly.
+ This project introduces a sophisticated, integrated system designed to detect alcohol levels
+in the breath of a driver before allowing vehicle operation. Using a reliable ethanol gas sensor,
+the system evaluates the alcohol concentration in the driver's breath when they attempt to start
+the vehicle. If the alcohol content exceeds a set legal limit, the system intervenes by disabling
+the vehicle's ignition, thereby preventing the driver from operating the car while under the
+influence.
+ The system is built around three core components: an alcohol sensor, a microcontroller for
+data processing, and a relay module that controls the ignition process based on the sensor data.
+This approach not only enhances road safety but also serves as a preventive tool, potentially
+saving lives by denying vehicle access to intoxicated drivers.
+ Integrating such technology in vehicles could serve as a critical step towards achieving
+higher road safety standards, significantly lowering the risk of alcohol-related incidents. This
+project aims to explore the feasibility and effectiveness of deploying such automatic detection
+systems widely, in hopes of fostering a safer driving environment for all road users.
+
+
+
+Literature Review:
+
+The literature review for the Automatic Alcohol Detection System project explores various
+studies, technological advancements, and existing implementations related to alcohol detection
+technologies and their integration into vehicle safety systems. The following key areas are
+covered:
+1.Alcohol Detection Technologies: Research into alcohol sensors has shown a variety of
+approaches, including semiconductor-based sensors, electrochemical sensors, and infrared
+spectroscopy. Electrochemical sensors, as discussed by Singh et al. (2020), offer higher
+accuracy and stability, making them more suitable for integration into safety-critical systems.
+2. System Integration in Vehicles: Studies have explored various methods of integrating
+alcohol detection systems into vehicles. Johnson and Lee (2019) demonstrated a model where
+alcohol detection is directly linked to the vehicle’s ignition system. Furthermore, research by
+Chen et al. (2021) incorporated additional features such as real-time data logging and GPS
+tracking to monitor driver compliance.
+3.Legal and Ethical Considerations: The implementation of alcohol detection systems raises
+significant legal and ethical issues. Thompson et al. (2017) examined the privacy concerns and
+the legal implications of mandatory alcohol detectors in cars.
+4.Effectiveness and Public Safety Impact: A report by the National Highway Traffic Safety
+Administration (NHTSA, 2019) highlighted pilot programs where such systems have led to a
+significant decrease in alcohol-related accidents.
+ The literature confirms the feasibility and potential effectiveness of Automatic Alcohol
+Detection Systems in enhancing road safety. By building on existing studies and technological
+insights, the project aims to contribute to the development of more reliable and publicly
+acceptable alcohol detection solutions for vehicles.
+
+
+
+Proposed Method:
+
+Implementing the Automatic Alcohol Detection System using IoT (Internet of Things)
+technology adds an extra layer of connectivity, allowing for remote monitoring, data analysis,
+and real-time alerts. Here's the proposed method for integrating IoT into the project:
+1. Sensor Selection and IoT Integration: Choose an alcohol sensor that is compatible
+with IoT platforms, capable of transmitting data wirelessly. Select IoT hardware components
+such as microcontrollers with built-in Wi-Fi or cellular connectivity (e.g., ESP32, Arduino with
+GSM shield) to interface with the sensor and relay module.
+2. IoT Platform Setup: Choose an IoT platform (e.g., AWS IoT, Google Cloud IoT, Azure
+IoT) for data management, device communication, and cloud-based analytics. Set up the IoT
+platform by creating device registries, configuring security policies, and establishing data
+ingestion pipelines.
+3. Sensor Data Transmission: Configure the microcontroller to collect sensor data and
+transmit it securely to the IoT platform using MQTT, HTTP, or other suitable protocols.
+Implement encryption and authentication mechanisms to ensure data integrity and
+confidentiality during transmission.
+4. Cloud-based Data Processing and Analysis: Develop data processing pipelines on the
+IoT platform to analyze the incoming sensor data in real-time. Implement algorithms for
+detecting alcohol presence, calculating BAC levels, and triggering appropriate actions based
+on predefined thresholds.
+5. Remote Monitoring and Control: Build a web or mobile application interface to allow
+users (drivers, fleet managers, authorities) to remotely monitor the alcohol detection system's
+status and receive notifications. Enable remote control functionalities to allow authorized users
+to override the system in emergency situations or for maintenance purposes.
+6. Edge Computing for Low-Latency Processing: Explore edge computing solutions
+(e.g., Raspberry Pi, NVIDIA Jetson) to perform local processing and decision-making at the
+vehicle level, reducing latency and dependency on cloud services.
+7. Data Privacy and Compliance: Ensure compliance with data privacy regulations (e.g.,
+GDPR, HIPAA) by implementing data anonymization, access controls, and secure storage
+practices. Provide transparency to users regarding data collection, processing, and sharing
+practices through clear privacy policies and consent mechanisms.
+8. Continuous Monitoring and Maintenance: Implement mechanisms for continuous
+monitoring of system health and performance, including sensor calibration, battery status, and
+network connectivity. Set up alerts and automated maintenance routines to address issues
+proactively and ensure uninterrupted operation.
+Design:
+
+
+
+
+Components:
+
+1. 5 or 6V relay module: In an alcohol detection system likely acts as a switch to trigger
+an alarm or some other action when alcohol is detected. It's commonly used to control external
+devices like buzzers, lights, or notifications when a certain threshold of alcohol concentration
+is reached.
+2. Arduino nano: An Arduino Nano in an alcohol detection system serves as the brain of
+the operation. It processes sensor data, analyzes alcohol concentration levels, and controls the
+operation of other components such as the alcohol sensor, display, and relay module. It
+essentially acts as the central control unit, making decisions based on input from the sensor and
+executing predefined actions, like triggering alarms or notifications when necessary.
+3. Dc power booster module : A DC power booster module in an alcohol detection
+system is used to regulate and boost the voltage from a lower input voltage to a higher output
+voltage. This is typically necessary to power components that require higher voltages than what
+the power source can provide. In the context of an alcohol detection system, it may be used to
+ensure that all components, such as the sensor, Arduino Nano, and relay module, receive a
+stable and sufficient voltage to operate effectively.
+4. 3.7v lithium ion battery : A 3.7V lithium-ion battery serves as the power source for
+the alcohol detection system when a stable and portable power supply is needed. It provides
+the necessary voltage to power the Arduino Nano, alcohol sensor, relay module, and any other
+components in the system. Additionally, it allows the system to be used in mobile or remote
+locations where access to a power outlet may not be available.
+5. MQ3 alcohol sensor : The MQ-3 alcohol sensor in an alcohol detection system detects
+the presence of alcohol vapor in the air. It works based on the principle of a chemical reaction
+between the alcohol molecules and the sensor's metal oxide semiconductor. When alcohol is
+present, the electrical conductivity of the sensor changes, which can be measured and
+interpreted by the system. The output from the sensor helps the system determine the alcohol
+concentration level, which can then be used to trigger alarms, notifications, or other actions as
+needed.
+6. Charging protection module : A charging protection module in an alcohol detection
+system serves to regulate and protect the lithium-ion battery during the charging process. It
+typically includes features such as overcharge protection, over-discharge protection, short
+circuit protection, and reverse polarity protection. This ensures safe and efficient charging of
+the battery, prolonging its lifespan and reducing the risk of damage or safety hazards. In the
+context of the alcohol detection system, the charging protection module ensures that the battery
+used to power the system is charged safely and reliably.
+7. SPST Switch : An SPST (Single Pole Single Throw) switch in an alcohol detection
+system is a simple on/off switch that controls the power supply to the system. It allows the user
+to manually turn the system on or off, providing a convenient way to activate or deactivate the
+detection system as needed. This switch is typically used as a master power switch, allowing
+the user to easily power up or shut down the entire system.
+8. Dc gear motor : In an alcohol detection system, a DC gear motor might be used for
+specific applications such as triggering physical mechanisms like a door lock, window opener,
+or ventilation system based on the alcohol concentration level detected. For example, if alcohol
+concentration reaches a dangerous level in a confined space, the DC gear motor could be
+employed to open a ventilation system to allow fresh air to enter and dilute the alcohol vapors.
+Essentially, it's used to drive mechanical components in response to the detected alcohol levels,
+enhancing safety measures or implementing automated responses.
+9. 3v led and buzzer : In an alcohol detection system, a 3V LED and buzzer are
+commonly used as alarm indicators to alert users when alcohol concentration levels exceed a
+certain threshold. The LED provides a visual signal, typically by lighting up, indicating the
+presence of alcohol. It can be placed in a visible location to draw attention to the detection
+event. Meanwhile, the buzzer emits an audible alarm when triggered by the system. This alerts
+users even if they are not looking directly at the system, providing an additional layer of
+notification. Together, the LED and buzzer serve as effective alarm mechanisms to warn users
+of potentially dangerous alcohol levels in the environment.
+
+
+
+Implementation:
+
+Code:
+#define sensorDigital A0
+#define Motor 43 #define
+buzzer 42 #define sensorAnalog
+A1 void setup() {
+pinMode(sensorDigital,INPUT);
+pinMode(Motor,OUTPUT);
+pinMode(buzzer,OUTPUT);
+Serial.begin(9600); } void loop() { bool
+digital=digitalRead(sensorDigital); int
+analog=analogRead(sensorAnalog);
+Serial.print("Analog value:");
+Serial.print(analog);
+Serial.print("t");
+Serial.print("Digital value");
+Serial.println(digital); if
+(digital==0){
+digitalWrite(Motor,LOW);
+digitalWrite(buzzer,HIGH);
+} else{
+digitalWrite(Motor,HIGH);
+digitalWrite(buzzer,LOW);
+}
+}
+
+
+
+Test Case and Result:
+
+ Fig.(a) No alcohol detected Fig. (b) Alcohol detected
+ Once the hardware is completed, the system is powered by using 5V power supply. When an
+alcoholic attempts to drive a car, an alcohol sensor detects the presence of alcohol. When the
+alcohol value measured is less than 500 ppm, the LCD displays “NO ALCOHOL DETECTED”
+as shown in Fig.(a). Next, when alcohol is in the range above 500 ppm, the LCD displays
+“ALCOHOL DETECTED”, as shown in Fig.(b)
+ The fig.(a) shows that initially no alcohol is detected hence the motor is in ON condition,
+green LED glows and the buzzer is in off state. The fig.(b) shows that whenever the alcohol is
+detected in the breath of the person driving the vehicle automatically the motor is in OFF
+condition, green LED OFF, red LED glows and the buzzer is in ON state gives indication
+alcohol is detected. However, our system can be integrated to not only 2 wheelers, but also with
+any kind of vehicle thereby preventing more accidents and saving more people. All equipment
+is totally tested and connected as there by giving us the needed result required.
+ Before interfacing GPS location to GSM module to send text messages to the person in
+charge, both the modules are tested separately for its functionality. For GPS module, latitude
+and longitude were recorded live and is displayed in serial monitor. Then, for GSM module, a
+reloaded SIM card is placed in the module, which will send a text message to respective person
+upon obtaining the location of drunk drivers. Upon integrating both these modules, the location
+of the drunk driver vehicle which is sent via text message together with Google map location.
+
+
+
+Conclusion:
+
+ In conclusion, the IoT-enabled Automatic Alcohol Detection System represents a significant
+advancement in vehicular safety technology, aiming to mitigate the risks associated with drunk
+driving. By integrating alcohol detection sensors with IoT capabilities, the system offers
+realtime monitoring, data analytics, and remote control functionalities, ultimately promoting
+safer road environments. Through the proposed method, the project leverages state-of-the-art
+sensor technology, microcontrollers, and cloud-based IoT platforms to detect alcohol levels in
+the driver's breath and prevent vehicle operation if intoxication is detected.
+ Moreover, the project addresses critical considerations such as data privacy, system
+reliability, and regulatory compliance, ensuring the system's effectiveness and ethical use. By
+providing remote monitoring and control interfaces, the system empowers users to actively
+engage in promoting responsible driving behavior. Overall, the IoT-enabled Automatic Alcohol
+Detection System has the potential to significantly reduce alcohol-related accidents and
+fatalities, contributing to improved road safety outcomes.
+References:
+3. SK. Singh and A. Kumar, ”Alcohol Detection System for Drunk Drivers,” International
+Journal of Innovative Research in Science, Engineering and Technology, vol 4,pp.11-14,2015.
+4.R.K.Gupta and A. K. Sharma, “Design and Development of Alcohol Detection System for
+Vehicle Safety,” International Journal of Advanced Research in Computer Science and
+Software Engineering ,vol4,no-8,oo.1027 1030,2014
+1.https://drive.google.com/drive/folders/1FDvhYRaBU5W3WNBTQXJ1XlBY1GwfoeZw?u
+sp=share_link
+2. https://www.projectsof8051.com/alcohol-sensor-projects
